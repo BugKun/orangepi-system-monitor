@@ -1,0 +1,21 @@
+{
+  "name": "orangepi-system-monitor",
+  "version": "1.0.0",
+  "description": "监听整个系统的CPU使用率、内存使用率、CPU温度、硬盘使用率，并支持告警",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BugKun/orangepi-system-monitor"
+  },
+  "author": "nopast",
+  "license": "MIT",
+  "dependencies": {
+    "dayjs": "^1.8.36",
+    "os-utils": "0.0.14",
+    "request": "^2.88.2",
+    "spawn-please": "^0.4.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "monitInterval": 1000,
+    "cpuConfig": {
+        "overload": 90,
+        "duration": 60000
+    },
+    "memConfig": {
+        "overload": 90,
+        "duration": 60000
+    },
+    "cpuTemperatureConfig": {
+        "overload": 80,
+        "duration": 60000
+    },
+    "diskConfig": {
+        "monitInterval": 3600000,
+        "overload": 80,
+        "diskList": ["/dev/mmcblk0p1"]
+    },
+    "SCKEY": ""
+}
