@@ -178,7 +178,6 @@ function monitMemoryInfo(config) {
         memUsage.push(usedMemory)
         if(memUsage.length >= Math.floor(config.duration / config.monitInterval)) {
             const avgMemUsage = memUsage.reduce((prev, next) => prev + next) / memUsage.length / memInfo.total * 100
-            console.log(avgMemUsage, 'avgMemUsage')
             if(avgMemUsage > config.overload) {
                 const msg = {
                     title: '[orangepi]的运行内存占用告警',
