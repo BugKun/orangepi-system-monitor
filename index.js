@@ -29,7 +29,7 @@ function sendMessage(msg) {
     return new Promise((resolve, reject) => {
         request.post(
             {
-                url: `https://sc.ftqq.com/${config.SCKEY}.send`,
+                url: config.pushServer.url,
                 form: {text: msg.title, desp: msg.content},
             },
             function (err, response, body) {
@@ -266,7 +266,7 @@ sendMessage({
     content: `${now()}: [orangepi]的系统监控启动成功`
 })
 .then(res => {
-    if(res.errmsg == 'success') {
+    if(res.errno == 0) {
         console.log(`${now()}: [orangepi]的系统监控启动成功`)
     }
 })

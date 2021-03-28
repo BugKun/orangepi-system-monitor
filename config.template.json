@@ -17,5 +17,7 @@
         "overload": 80,
         "diskList": ["/dev/mmcblk0p1"]
     },
-    "SCKEY": ""
+    "pushServer": {
+        "url": "https://sc.ftqq.com/${SCKEY}.send"
+    }
 }
